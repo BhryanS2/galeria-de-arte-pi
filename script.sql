@@ -23,6 +23,7 @@ CREATE TABLE `usuarios` (
   `name` varchar(255),
   `email` varchar(255),
   `senha` varchar(255),
+  `tipo` varchar(255) default 'usuario',
   `create_at` varchar(255)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
 
@@ -71,6 +72,17 @@ create table `mensagens` (
   `mensagem` text,
   `create_at` date default current_timestamp
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+insert into
+  `usuarios`(name, email, senha, tipo, create_at)
+values
+  (
+    'admin',
+    'admin@admin.com',
+    MD5('admin'),
+    'admin',
+    '2020-10-10 10:10:10'
+  );
 
 insert into
   quiz (

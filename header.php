@@ -76,12 +76,15 @@
 			$links = [
 				["Home", "./index.php"],
 				["Artes", "pages/artes.php"],
-				["Design Gráfico", "pages/Design_grafico.php"],
+				["Conteúdo", "pages/Design_grafico.php"],
 			];
 			if (isset($_SESSION['user'])) {
 				$links[] = ["Mensagem", "pages/messagens.php"];
 				$links[] = ["Quiz", "quiz.php"];
 				$links[] = ["Logout", "./pages/logout.php"];
+				if ($_SESSION['user']['role'] == 'admin') {
+					$links[] = ["Admin", "pages/admin.php"];
+				}
 			} else {
 				$links[] = ["Login", "pages/login.php"];
 				$links[] = ["Cadastro", "pages/cadastro.php"];

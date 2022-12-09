@@ -1,47 +1,21 @@
-.tooltip_container {
-  position: relative;
-}
-
-.tooltip_container:hover .tooltip {
-  display: block;
-  top: 0;
-  left: -100%;
-  transform: translate(-10%, -100%);
-  width: initial;
-  height: initial;
-  padding: 0.2rem 0.5rem;
-  margin: initial;
-  overflow: initial;
-  clip: initial;
-  white-space: initial;
-  border-width: initial;
-}
-
-.tooltip {
-  position: absolute;
-  /* display: none; */
-  /* z-index: -10; */
-  top: 0;
-  left: 0;
-  background-color: #3f3f3f;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 18px;
-  transition: all 0.2s ease-in-out;
-  width: 1px;
-  height: 1px;
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+  
+  font-family: 'Arial', sans-serif;
 }
 
-.addAlternativa {
+.container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
 }
 
-/* https://dbdiagram.io/d/6312389c0911f91ba525088e */
+.container > .card {
+  flex: 1 1 300px;
+}

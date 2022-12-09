@@ -24,3 +24,13 @@ function convert_array_to_utf8($array)
 
 	return $array;
 }
+
+function newConn()
+{
+	global $server_url;
+	global $server;
+	global $user;
+	global $pass;
+	global $db;
+	return new mysqli($server, $user, $pass, $db);
+}

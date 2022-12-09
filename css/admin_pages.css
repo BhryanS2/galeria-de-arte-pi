@@ -1,0 +1,81 @@
+
+.container .card:first-child {
+  margin-top: 2rem;
+}
+
+.container > .card {
+  flex: auto;
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* width: 100%; */
+  min-width: 200px;
+}
+
+.card-header,
+.card-body,
+.card-body-content,
+.card-body-content-item,
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+}
+
+.card-header {
+  text-align: center;
+}
+
+
+.card-footer p {
+  margin: 0;
+}
+
+.card-footer a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.card-footer a:hover {
+  background-color: #0069d9;
+}
+
+.card-footer a:active {
+  background-color: #0062cc;
+}
+
+.card-footer a:visited {
+  background-color: #0062cc;
+}
+
+
+/* transitions */
+
+.card {
+  transition: all 0.3s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+
+.continer form.card {
+  min-width: 250px;
+  max-width: 300px;
+  width: 250px;
+}

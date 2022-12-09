@@ -15,6 +15,7 @@ if ($row) {
 		'email' => $row['email'],
 		'name' => $row['name'],
 		'id' => $row['id'],
+		'role' => $row['tipo']
 	];
 	echo "<script>window.location.href = '../index.php'</script>";
 } else {
